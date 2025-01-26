@@ -1,0 +1,37 @@
+@import "tailwindcss";
+
+@layer components {
+  .side-btn {
+    @apply w-28 h-11 flex items-center justify-evenly text-center rounded-md p-2;
+  }
+  .gradient-sky {
+    @apply bg-gradient-to-r from-sky-400 to-purple-400 bg-clip-text text-transparent;
+  }
+}
+
+@theme {
+  --font-square: "square";
+}
+
+@theme {
+  --font-bohemy: "bohemy";
+}
+
+@theme {
+  --font-poppins: "poppins";
+}
+
+@font-face {
+  font-family: "bohemy";
+  src: url("/public/font/bohemy/Bohemy.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "square";
+  src: url("/public/font/square_game/Squaregame.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "poppins";
+  src: url("/public/font/poppins/Poppins-Regular.ttf") format("truetype");
+}
