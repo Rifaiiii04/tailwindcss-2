@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Sidebar Responsive with Tailwind CSS 🎨💻
 
 This is a user interface (UI) project built using Tailwind CSS. The project focuses on creating a responsive sidebar with a toggle menu, utilizing a combination of Tailwind CSS classes and Font Awesome icons.
@@ -26,3 +27,6 @@ If you'd like to contribute to this project, feel free to fork the repository an
 
 ## License 🔒:
 This project is licensed under the MIT License 🔑.
+=======
+# tailwindcss-2
+>>>>>>> 63ecea17145422baf810b9d18dcd0614c0b950b1
