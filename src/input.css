@@ -38,3 +38,19 @@
   font-family: "poppins";
   src: url("/fonts/poppins/Poppins-Regular.ttf") format("truetype");
 }
+
+/* Local */
+@font-face {
+  font-family: "bohemy";
+  src: url("/public/fonts/bohemy/Bohemy.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "square";
+  src: url("/public/fonts/square_game/Squaregame.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "poppins";
+  src: url("/public/fonts/poppins/Poppins-Regular.ttf") format("truetype");
+}
