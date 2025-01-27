@@ -22,7 +22,7 @@
       >
         <i class="fa-solid fa-xmark gradient-sky cursor-pointer"></i>
       </button>
-      <div class="container py-5 ml-4 w-52 text-center">
+      <div class="container py-5 ml-4 w-52 text-center md:hidden">
         <h1 class="text-4xl font-square gradient-sky">Welcome!</h1>
         <h2 class="text-2xl font-bohemy tracking-wider gradient-sky">
           To my Website
@@ -107,24 +107,78 @@
       </div>
     </header>
     <main>
+      <div class="container py-5 w-full mt-5 text-center hidden md:block mx-auto">
+        <h1 class="text-7xl font-square gradient-sky">Welcome!</h1>
+        <h2 class="text-4xl font-bohemy tracking-wider gradient-sky">
+          To my Website
+        </h2>
+      </div>
+      
       <!-- profile -->
       <section class="flex items-center justify-center mt-11">
+        <div class="hidden md:block mr-30">
+          <p class="text-xl font-bold text-slate-300">Hello, I'am</p>
+          <p class="text-6xl text-center text-purple-500 font-semibold"><span class="text-sky-500 font-bold">Muhamad</span> Rifai</p>
+          <div class="bg-gradient-to-r from-sky-500 to bg-purple-500 w-72 h-0.5 flex mx-auto mb-1 mt-2"></div>
+          <p class="text-center text-slate-300 text-lg"><span class="font-semibold">Front-End</span> Enthusiast | <span class="font-semibold">Information System</span>  Study</p></div>
       <div
-        class="bg-gradient-to-r from-sky-500 to bg-purple-500 w-56 h-42 mt-6 relative group rounded-t-full border-4 shadow-lg shadow-sky-700 hover:transform hover:scale-110 transition-all duration-500"><img
+        class="bg-gradient-to-r from-sky-500 to bg-purple-500 w-52 h-44 md:w-64 md:h-52 md:mt-6 relative md:-ml-10 group rounded-t-full border-4 shadow-lg shadow-sky-700 hover:transform hover:scale-110 transition-all duration-500"><img
             src="img/profile.png"
             alt=""
-            class="absolute bottom-2.5 transform scale-110 group-hover:transform group-hover:scale-125 transition-all duration-500 group-hover:bottom-6"
+            class="absolute bottom-2.5 transform scale-110 group-hover:transform group-hover:scale-125 group-hover:bottom-6 md:group-hover:bottom-7 transition-all duration-500"
           /></div>
     </div>
   </section>
   <!-- deskripsi singkat -->
-  <div class="container w-full mt-8 p-3 flex items-center sm:ml-11 justify-center text-center font-poppins">
+  <div class="container md:hidden w-full p-3 flex items-center sm:mx-auto justify-center text-center mt-3 font-poppins">
     <section>
-      <p class="text-4xl text-purple-500"><span class="text-sky-500">Muhamad</span> Rifai</p>
+      <p class="text-justify relative left-3 font-semibold font-bo">Hello, I'am</p>
+      <p class="text-4xl text-purple-500 font-bo"><span class="text-sky-500 font-bold">Muhamad</span> Rifai</p>
       <div class="bg-gradient-to-r from-sky-500 to bg-purple-500 w-52 h-0.5 flex mx-auto mb-2 mt-1"></div>
-      <p class="text-xs">Front-End Enthusiast | Information System Study</p>
+      <p class="text-xs"><span class="font-semibold">Front-End</span> Enthusiast | <span class="font-semibold">Information System</span>  Study</p>
     </section>
   </div>
+  <!-- skills -->
+    <section class="p-3">
+      <div class="container text-center flex items-center justify-center">
+        <h1 class="font-poppins font-bold text-2xl">My Skills</h1>
+      </div>
+      <div class=" flex w-full h-auto mt-3 rounded-xl border-2 border-sky-500 shadow-lg shadow-sky-800">
+        <div class="p-2 w-1/2">
+          <h2 class="text-2xl font-poppins font-bold text-white text-center underline">Hard Skill</h2>
+          <ul class="font-poppins text-center font-semibold mt-2">
+            <li>Web Front-End</li>
+            <div class="mt-2 bg-gradient-to-r from-sky-500 to bg-purple-500 h-0.5 rounded-xl"></div>
+            <li class="mt-2">UI/UX Design</li>
+            <div class="mt-2 bg-gradient-to-r from-sky-500 to bg-purple-500 h-0.5 rounded-xl"></div>
+            <li class="mt-2">Mobile Front-End</li>
+            <div class="mt-2 bg-gradient-to-r from-sky-500 to bg-purple-500 h-0.5 rounded-xl"></div>
+            <li class="mt-2 gradient-sky text-xl ">
+              <i class="fa-brands fa-flutter "></i>
+              <i class="fa-brands fa-figma "></i>
+              <i class="fa-brands fa-html5 "></i>
+              <i class="fa-brands fa-css3 "></i>
+              <i class="fa-brands fa-square-js "></i>
+              <i class="fa-brands fa-react "></i>
+            </li>
+            <div class="mt-2 bg-gradient-to-r from-sky-500 to bg-purple-500 h-0.5 rounded-xl"></div>
+          </ul>
+        </div>
+        <div class="p-2 w-1/2">
+          <h2 class="text-2xl font-poppins font-bold text-center text-white underline">Soft Skill</h2>
+          <ul class="font-poppins text-center font-semibold mt-2">
+            <li>Communication</li>
+            <div class="mt-2 bg-gradient-to-r from-sky-500 to bg-purple-500 h-0.5 rounded-xl"></div>
+            <li class="mt-2">Team Work</li>
+            <div class="mt-2 bg-gradient-to-r from-sky-500 to bg-purple-500 h-0.5 rounded-xl"></div>
+            <li class="mt-2">Problem Solving</li>
+            <div class="mt-2 bg-gradient-to-r from-sky-500 to bg-purple-500 h-0.5 rounded-xl"></div>
+            <li class="mt-2">Critical Thinking</li>
+            <div class="mt-3 bg-gradient-to-r from-sky-500 to bg-purple-500 h-0.5 rounded-xl"></div>
+          </ul>
+        </div>
+      </div>
+    </section>
     </main>
   </body>
 </html>
