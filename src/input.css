@@ -7,6 +7,9 @@
   .gradient-sky {
     @apply bg-gradient-to-r from-sky-400 to-purple-400 bg-clip-text text-transparent;
   }
+  .perspective {
+    perspective: 1000px;
+  }
 }
 
 @theme {
