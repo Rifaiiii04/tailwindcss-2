@@ -26,15 +26,15 @@
 
 @font-face {
   font-family: "bohemy";
-  src: url("/public/font/bohemy/Bohemy.ttf") format("truetype");
+  src: url("/public/fonts/bohemy/Bohemy.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "square";
-  src: url("/public/font/square_game/Squaregame.otf") format("opentype");
+  src: url("/public/fonts/square_game/Squaregame.otf") format("opentype");
 }
 
 @font-face {
   font-family: "poppins";
-  src: url("/public/font/poppins/Poppins-Regular.ttf") format("truetype");
+  src: url("/public/fonts/poppins/Poppins-Regular.ttf") format("truetype");
 }
