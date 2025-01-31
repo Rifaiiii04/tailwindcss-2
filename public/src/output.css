@@ -2728,6 +2728,11 @@
       }
     }
   }
+  .active\:text-sky-600 {
+    &:active {
+      color: var(--color-sky-600);
+    }
+  }
   .active\:text-sky-800 {
     &:active {
       color: var(--color-sky-800);
