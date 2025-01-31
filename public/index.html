@@ -13,16 +13,14 @@
   <body class="bg-slate-950 text-slate-200">
     <header class="p-3">
       <!-- Toggle -->
-      <button class="block relative top-0 text-4xl md:hidden" id="menuToggle">
-        <i class="fa-solid fa-bars gradient-sky cursor-pointer"></i>
+      <button id="menuToggle" class="block fixed top-3 text-4xl z-20 md:hidden cursor-pointer" >
+        <div class="w-10 h-10 flex flex-col justify-between items-center p-1">
+          <span class="block w-8 h-1 transform bg-gradient-to-r from-blue-500  to-purple-600 rounded transition-all duration-300 origin-center"></span>
+          <span class="block w-5 h-1 bg-gradient-to-r transform from-blue-600 to-purple-600 rounded transition-all duration-300 "></span>
+          <span class="block w-8 h-1 bg-gradient-to-r transform from-blue-600 to-purple-600 rounded transition-all duration-300 origin-center"></span>
+        </div>
       </button>
-      <button
-        class="hidden relative top-0 text-4xl md:hidden z-20"
-        id="closeToggle"
-      >
-        <i class="fa-solid fa-xmark gradient-sky cursor-pointer"></i>
-      </button>
-      <div class="container py-5 ml-4 w-52 text-center md:hidden">
+      <div class="container py-8 mx-auto w-52 text-center md:hidden">
         <h1 class="text-4xl font-square gradient-sky">Welcome!</h1>
         <h2 class="text-2xl font-bohemy tracking-wider gradient-sky">
           To my Website
@@ -159,29 +157,38 @@
 
 <script>
   const menuToggle = document.getElementById("menuToggle");
-  const closeToggle = document.getElementById("closeToggle");
+  const spans = document.querySelectorAll("span");
   const sidebar = document.getElementById("sidebar");
   const overlay = document.getElementById("overlay");
 
-  menuToggle.addEventListener("click", () => {
-    sidebar.classList.remove("-translate-x-full");
-    overlay.classList.remove("hidden");
-    menuToggle.classList.add("hidden");
-    closeToggle.classList.remove("hidden");
-    closeToggle.classList.add("block");
-  });
+  let isOpen = false;
 
-  closeToggle.addEventListener("click", () => {
-    sidebar.classList.add("-translate-x-full");
-    overlay.classList.add("hidden");
-    menuToggle.classList.remove("hidden");
-    closeToggle.classList.add("hidden");
-  });
+  menuToggle.addEventListener("click", ()=> {
+    isOpen =!isOpen;
+
+    sidebar.classList.toggle("-translate-x-full");
+    overlay.classList.toggle("hidden");
+
+    spans[0].classList.toggle("rotate-45");
+    spans[0].classList.toggle("translate-y-[10px]");
+
+    spans[1].classList.toggle("opacity-0");
+
+    spans[2].classList.toggle("-rotate-45");
+    spans[2].classList.toggle("-translate-y-[18px]");
+  })
 
   overlay.addEventListener("click", () => {
+    isOpen = false
     sidebar.classList.add("-translate-x-full");
     overlay.classList.add("hidden");
-    menuToggle.classList.remove("hidden");
-    closeToggle.classList.add("hidden");
+
+   spans[0].classList.remove("rotate-45");
+    spans[0].classList.remove("translate-y-[10px]");
+
+    spans[1].classList.remove("opacity-0");
+
+    spans[2].classList.remove("-rotate-45");
+    spans[2].classList.remove("-translate-y-[18px]");
   });
 </script>
