@@ -2765,6 +2765,13 @@
       }
     }
   }
+  .group-hover\:text-sky-600 {
+    &:is(:where(.group):hover *) {
+      @media (hover: hover) {
+        color: var(--color-sky-600);
+      }
+    }
+  }
   .group-hover\:text-slate-100 {
     &:is(:where(.group):hover *) {
       @media (hover: hover) {
@@ -2777,6 +2784,16 @@
       @media (hover: hover) {
         color: var(--color-slate-900);
       }
+    }
+  }
+  .group-active\:text-sky-400 {
+    &:is(:where(.group):active *) {
+      color: var(--color-sky-400);
+    }
+  }
+  .group-active\:text-sky-600 {
+    &:is(:where(.group):active *) {
+      color: var(--color-sky-600);
     }
   }
   .hover\:scale-110 {
@@ -2817,6 +2834,13 @@
       }
     }
   }
+  .hover\:bg-slate-800 {
+    &:hover {
+      @media (hover: hover) {
+        background-color: var(--color-slate-800);
+      }
+    }
+  }
   .hover\:bg-slate-900 {
     &:hover {
       @media (hover: hover) {
@@ -2849,6 +2873,16 @@
   .active\:bg-slate-700 {
     &:active {
       background-color: var(--color-slate-700);
+    }
+  }
+  .active\:bg-slate-900 {
+    &:active {
+      background-color: var(--color-slate-900);
+    }
+  }
+  .active\:bg-slate-950 {
+    &:active {
+      background-color: var(--color-slate-950);
     }
   }
   .active\:text-sky-800 {
