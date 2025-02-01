@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -33,13 +33,13 @@
         <div class="w- p-3 mt-2">
           <h1 class="font-square ml-5 text-3xl gradient-sky">PayXD</h1>
         </div>
-        <ul class="p-4 font-poppins space-y-2 text-xl text-slate-200">
+        <ul class="p-4 font-poppins space-y-2 text-md text-slate-200">
           <a
             href="#"
             class="side-btn group hover:bg-slate-900 transition-all duration-200"
           >
             <li class="gradient-sky group-hover:text-sky-400">
-              <i class="fa-solid fa-house"></i>
+              Home
             </li>
           </a>
           <a
@@ -47,7 +47,7 @@
             class="side-btn group hover:bg-slate-900 transition-all duration-200"
           >
             <li class="gradient-sky group-hover:text-sky-400">
-              <i class="fa-solid fa-user"></i>
+              About Me
             </li>
           </a>
           <a
@@ -55,7 +55,7 @@
             class="side-btn group hover:bg-slate-900 transition-all duration-200"
           >
             <li class="gradient-sky group-hover:text-sky-400">
-              <i class="fa-solid fa-phone"></i>
+              Project
             </li>
           </a>
           <a
@@ -63,7 +63,7 @@
             class="side-btn group hover:bg-slate-900 transition-all duration-200"
           >
             <li class="gradient-sky group-hover:text-sky-400">
-              <i class="fa-solid fa-list-check"></i>
+              Contact Me
             </li>
           </a>
         </ul>
@@ -80,34 +80,34 @@
         >
           PayXD
         </h1>
-        <ul class="flex md:gap-16 text-xl  relative right-8 mx-auto">
+        <ul class="flex md:gap-16 text-md items-center mx-auto font-poppins">
           <li
             class="gradient-sky hover:text-sky-500 transition-all duration-300"
           >
-            <a href="#"><i class="fa-solid fa-house"></i></a>
+            <a href="#">Home</a>
           </li>
           <li
             class="gradient-sky hover:text-sky-500 transition-all duration-300"
           >
-            <a href="#"><i class="fa-solid fa-user"></i></a>
+            <a href="#">About Me</a>
           </li>
           <li
             class="gradient-sky hover:text-sky-500 transition-all duration-300"
           >
-            <a href="#"></a><i class="fa-solid fa-phone"></i>
+            <a href="#"></a>Project</i>
           </li>
           <li
             class="gradient-sky hover:text-sky-500 transition-all duration-300"
           >
-            <a href="#"><i class="fa-solid fa-list-check"></i></a>
+            <a href="#">Contact Me</a>
           </li>
         </ul>
       </nav>
     </header>
     <main>
       <div class="container py-5 w-full mt-16 text-center hidden md:block mx-auto">
-        <h1 class="text-7xl font-square gradient-sky">Welcome!</h1>
-        <h2 class="text-4xl font-bohemy tracking-wider gradient-sky">
+        <h1 class="text-4xl font-square gradient-sky">Welcome!</h1>
+        <h2 class="text-3xl font-bohemy tracking-wider gradient-sky">
           To my Website
         </h2>
       </div>
@@ -130,11 +130,12 @@
         <a href="https://www.linkedin.com/in/muhamad-rifai-553a212a7" class="hover:text-sky-600 active:text-sky-800 transition duration-500"><i class="fa-brands fa-linkedin"></i></a>
         <a href="https://github.com/Rifaiiii04" class="hover:text-sky-600 transition active:text-sky-800 duration-500"><i class="fa-brands fa-github"></i></a>
           </div>
+          <a href="#aboutme" id="explore" class="hidden w-52 h-14 border-2 border-white/50  mt-3 rounded-full md:flex items-center justify-center group hover:bg-slate-600/60 active:bg-slate-700 transition-all duration-500"><span class="text-xl">Explore Me</span></a>
     </div>
     
   </section>
    <!-- mobile -->
-  <div class="container md:hidden w-full p-3 flex items-center sm:mx-auto justify-center text-center mt-5 font-poppins">
+  <div class="container md:hidden w-full p-3 flex items-center sm:mx-auto justify-center text-center mt-2 font-poppins">
     <section>
       <p class="text-xs">Follow Me At : </p>
       <div class=" w-full h-12 mt-2 flex items-center justify-center gap-5 text-3xl gradient-sky relative bottom-2">  
@@ -143,14 +144,21 @@
         <a href="https://www.linkedin.com/in/muhamad-rifai-553a212a7" class="hover:text-sky-600 active:text-sky-800 transition duration-500"><i class="fa-brands fa-linkedin"></i></a>
         <a href="https://github.com/Rifaiiii04" class="hover:text-sky-600 transition active:text-sky-800 duration-500"><i class="fa-brands fa-github"></i></a>
       </div>
+      <a href="#aboutme" id="explore" class=" w-52 h-14 border-2 border-white/50  mt-2 rounded-full flex items-center justify-center group hover:bg-slate-600/60 active:bg-slate-700 transition-all duration-500"><span class="text-xl">Explore Me</span></a>
     </section>
   </div>
+  <hr class="relative top-20 md:top-16">
   <!-- about -->
-  <section class="w-full h-auto p-3 bg-red-500 mt-20">
-    <h1>About Me</h1>
-    <div class="flex justify-between">
-    <div class="w-96 h-96 bg-sky-500 ">a</div>
-    <div class="w-96 h-96 bg-sky-500 ">a</div>
+  <section id="aboutme" class="w-[80%] h-auto p-3 mt-40 md:mt-24 m-auto">
+    <h1 class="font-poppins gradient-sky text-3xl font-extrabold text-center mb-5">About Me</h1>
+    <div class="flex justify-center gap-3 flex-wrap">
+    <div class="w-96 bg-transparent shadow-md shadow-sky-900 rounded-2xl ">
+      <div class="backdrop-blur-lg bg-white/10 rounded-2xl  overflow-auto">
+      <p class="font-poppins text-justify p-3 text-slate-300">
+        
+I am an Information Systems student at Horizon University Indonesia, focusing on Front-end Web Development. I have an interest in interactive interface design, 3D modeling, and experience in managing digital projects. Currently, I am continuously learning and improving my skills to create better user experiences through web technology.</p>
+    </div>
+    </div>
   </div>
   </section>
   </main>
@@ -202,4 +210,6 @@ document.addEventListener("mousemove", (anjaymabar) => {
   cursor.style.left = `${anjaymabar.clientX}px`;
   cursor.style.top = `${anjaymabar.clientY}px`;
 });
+
+
 </script>
