@@ -10,7 +10,9 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
     />
   </head>
-  <body class="bg-slate-950 text-slate-200">
+  <body class="bg-slate-950 text-slate-200"> 
+     <!-- cursor -->
+    <div class="hidden sm:block fixed w-20 h-20 bg-gradient-to-r z-0 from-sky-500 to-purple-700 blur-xl rounded-full pointer-events-none opacity-50" id="cursor"></div>
     <header class="p-3">
       <!-- Toggle -->
       <button id="menuToggle" class="block fixed top-3 text-4xl z-20 md:hidden cursor-pointer" >
@@ -43,7 +45,7 @@
             </li>
           </a>
           <a
-            href="#"
+            href="#aboutme"
             class="side-btn group hover:bg-slate-900 transition-all duration-200"
           >
             <li class="gradient-sky group-hover:text-sky-400">
@@ -89,7 +91,7 @@
           <li
             class="gradient-sky hover:text-sky-500 transition-all duration-300"
           >
-            <a href="#">About Me</a>
+            <a href="#aboutme">About Me</a>
           </li>
           <li
             class="gradient-sky hover:text-sky-500 transition-all duration-300"
@@ -162,54 +164,9 @@ I am an Information Systems student at Horizon University Indonesia, focusing on
   </div>
   </section>
   </main>
-  <!-- cursor -->
-  <div class="hidden md:block fixed w-8 h-8 bg-gradient-to-r z-0 from-sky-500 to-purple-700 blur-xl rounded-full pointer-events-none opacity-100" id="cursor"></div>
+
+ 
   </body>
 </html>
 
-<script>
-  const menuToggle = document.getElementById("menuToggle");
-  const spans = document.querySelectorAll("span");
-  const sidebar = document.getElementById("sidebar");
-  const overlay = document.getElementById("overlay");
-
-  let isOpen = false;
-
-  menuToggle.addEventListener("click", ()=> {
-    isOpen =!isOpen;
-
-    sidebar.classList.toggle("-translate-x-full");
-    overlay.classList.toggle("hidden");
-
-    spans[0].classList.toggle("rotate-45");
-    spans[0].classList.toggle("translate-y-[10px]");
-
-    spans[1].classList.toggle("opacity-0");
-
-    spans[2].classList.toggle("-rotate-45");
-    spans[2].classList.toggle("-translate-y-[18px]");
-  })
-
-  overlay.addEventListener("click", () => {
-    isOpen = false
-    sidebar.classList.add("-translate-x-full");
-    overlay.classList.add("hidden");
-
-   spans[0].classList.remove("rotate-45");
-    spans[0].classList.remove("translate-y-[10px]");
-
-    spans[1].classList.remove("opacity-0");
-
-    spans[2].classList.remove("-rotate-45");
-    spans[2].classList.remove("-translate-y-[18px]");
-  });
-
-  const cursor = document.getElementById("cursor");
-
-document.addEventListener("mousemove", (anjaymabar) => {
-  cursor.style.left = `${anjaymabar.clientX}px`;
-  cursor.style.top = `${anjaymabar.clientY}px`;
-});
-
-
-</script>
+<script src="main.js"></script>
