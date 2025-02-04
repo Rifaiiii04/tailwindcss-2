@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Muhamad Rifai</title>
+    <link rel="stylesheet" href="src/output.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+  </head>
+  <body class="bg-slate-950 text-slate-200"> 
+     <!-- cursor -->
+    <div class="hidden sm:block fixed w-14 h-14 bg-gradient-to-r z-0 from-sky-500 to-purple-700 blur-xl rounded-full pointer-events-none opacity-50" id="cursor"></div>
+    <header class="p-3">
+      <!-- Toggle -->
+      <button id="menuToggle" class="block fixed top-3 text-4xl z-20 md:hidden cursor-pointer" >
+        <div class="w-10 h-10 flex flex-col justify-between items-center p-1">
+          <span class="block w-8 h-1 transform bg-gradient-to-r from-blue-500  to-purple-600 rounded transition-all duration-300 origin-center"></span>
+          <span class="block w-5 h-1 bg-gradient-to-r transform from-blue-600 to-purple-600 rounded transition-all duration-300 "></span>
+          <span class="block w-8 h-1 bg-gradient-to-r transform from-blue-600 to-purple-600 rounded transition-all duration-300 origin-center"></span>
+        </div>
+      </button>
+      <div class="container py-14 mx-auto w-52 text-center md:hidden">
+        <h1 class="text-4xl font-square gradient-sky">Welcome!</h1>
+        <h2 class="text-2xl font-bohemy tracking-wider gradient-sky">
+          To my Website
+        </h2>
+      </div>
+      <aside
+        id="sidebar"
+        class="fixed top-44 left-0 z-20 w-44 h-80 bg-slate-800 rounded-r-4xl transform -translate-x-full transition-transform duration-1000 md:hidden"
+      >
+        <div class="w- p-3 mt-2">
+          <h1 class="font-square ml-5 text-3xl gradient-sky">PayXD</h1>
+        </div>
+        <ul class="p-4 font-poppins space-y-2 text-md text-slate-200">
+          <a
+            href="#"
+            class="side-btn group hover:bg-slate-900 active:bg-slate-900  transition-all duration-200"
+          >
+            <li class="gradient-sky group-hover:text-sky-400 group-active:text-sky-600">
+              Home
+            </li>
+          </a>
+          <a
+            href="#aboutme"
+            class="side-btn group hover:bg-slate-900 active:bg-slate-90 transition-all duration-200"
+          >
+            <li class="gradient-sky group-hover:text-sky-400 group-active:text-sky-600">
+              About Me
+            </li>
+          </a>
+          <a
+            href="#"
+            class="side-btn group hover:bg-slate-900 active:bg-slate-90 transition-all duration-200"
+          >
+            <li class="gradient-sky group-hover:text-sky-400 group-active:text-sky-600">
+              Project
+            </li>
+          </a>
+          <a
+            href="#"
+            class="side-btn group hover:bg-slate-900 active:bg-slate-90 transition-all duration-200"
+          >
+            <li class="gradient-sky group-hover:text-sky-400 group-active:text-sky-600">
+              Contact Me
+            </li>
+          </a>
+        </ul>
+      </aside>
+      <!-- overlay -->
+      <div id="overlay" class="hidden fixed inset-0 z-10 md:hidden"></div>
+
+      <!-- topbar -->
+      <nav
+        class="container md:fixed md:top-0 md:left-0 md:right-0 md:z-50 lg:max-w-3xl mx-auto md:w-full hidden md:flex mt-5 bg-slate-800 p-3 rounded-2xl shadow-lg shadow-sky-950 border border-slate-400"
+      >
+        <h1
+          class="font-square text-xl gradient-sky hover:text-sky-500 transition-all duration-300 cursor-default"
+        >
+          PayXD
+        </h1>
+        <ul class="flex md:gap-16 text-md items-center mx-auto font-poppins">
+          <li
+            class="gradient-sky hover:text-sky-500 transition-all duration-300"
+          >
+            <a href="#">Home</a>
+          </li>
+          <li
+            class="gradient-sky hover:text-sky-500 transition-all duration-300"
+          >
+            <a href="#aboutme">About Me</a>
+          </li>
+          <li
+            class="gradient-sky hover:text-sky-500 transition-all duration-300"
+          >
+            <a href="#"></a>Project</i>
+          </li>
+          <li
+            class="gradient-sky hover:text-sky-500 transition-all duration-300"
+          >
+            <a href="#">Contact Me</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="container py-5 w-full mt-16 text-center hidden md:block mx-auto">
+        <h1 class="text-4xl font-square gradient-sky">Welcome!</h1>
+        <h2 class="text-3xl font-bohemy tracking-wider gradient-sky">
+          To my Website
+        </h2>
+      </div>
+      
+      <!-- profile -->
+      <section class="max-w-4xl flex flex-col items-center mx-auto justify-center">
+        <!-- medium -->
+      <div
+        class="bg-gradient-to-r from-slate-900 to bg-sky-900 w-52 h-44 md:w-64 md:h-52 md:mt-6 relative  group rounded-t-full border-4 transition-all duration-500"><img
+            src="img/profile.png"
+            alt=""
+            class="absolute bottom-0"
+          />
+          
+        </div>
+        <p class="hidden md:block text-sm mt-3">Follow Me At : </p>
+        <div class="hidden md:flex gap-5 text-3xl mt-1 gradient-sky">
+            <a href="https://www.facebook.com/ericko.anjaymabar" class="hover:text-sky-600 active:text-sky-800 transition duration-500"><i class="fa-brands fa-facebook"></i></a>
+        <a href="https://www.instagram.com/mr.user404_?igsh=eTF2djZuNTJmdmd5" class="hover:text-sky-600 active:text-sky-800 transition duration-500"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/muhamad-rifai-553a212a7" class="hover:text-sky-600 active:text-sky-800 transition duration-500"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://github.com/Rifaiiii04" class="hover:text-sky-600 transition active:text-sky-800 duration-500"><i class="fa-brands fa-github"></i></a>
+          </div>
+          <a href="#aboutme" id="explore" class="hidden w-52 h-14 border-2 border-white/50  mt-3 rounded-full md:flex items-center justify-center group hover:bg-slate-600/60 active:bg-slate-700 transition-all duration-500 active:ring-2 ring-slate-300"><span class="text-xl">Explore Me</span></a>
+    </div>
+    
+  </section>
+   <!-- mobile -->
+  <div class="container md:hidden w-full p-3 flex items-center sm:mx-auto justify-center text-center mt-2 font-poppins">
+    <section>
+      <p class="text-xs">Follow Me At : </p>
+      <div class=" w-full h-12 mt-2 flex items-center justify-center gap-5 text-3xl gradient-sky relative bottom-2">  
+        <a href="https://www.facebook.com/ericko.anjaymabar" class="hover:text-sky-600 active:text-sky-800 transition duration-500"><i class="fa-brands fa-facebook"></i></a>
+        <a href="https://www.instagram.com/mr.user404_?igsh=eTF2djZuNTJmdmd5" class="hover:text-sky-600 active:text-sky-800 transition duration-500"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/muhamad-rifai-553a212a7" class="hover:text-sky-600 active:text-sky-800 transition duration-500"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://github.com/Rifaiiii04" class="hover:text-sky-600 transition active:text-sky-800 duration-500"><i class="fa-brands fa-github"></i></a>
+      </div>
+      <a href="#aboutme" id="explore" class=" w-52 h-14 border-2 border-white/50  mt-2 rounded-full flex items-center justify-center group hover:bg-slate-600/60 active:bg-slate-700 transition-all duration-500"><span class="text-xl">Explore Me</span></a>
+    </section>
+  </div>
+  <hr class="relative top-20 md:top-16">
+  <!-- about -->
+  <section id="aboutme" class="w-[80%] h-auto p-3 mt-40 md:mt-24 m-auto">
+    <h1 class="font-poppins gradient-sky text-3xl font-extrabold text-center mb-5">About Me</h1>
+    <div class="flex justify-center gap-3 flex-wrap">
+    <div class="w-96 bg-transparent shadow-md shadow-sky-900 rounded-2xl ">
+      <div class="backdrop-blur-lg bg-white/10 rounded-2xl  overflow-auto">
+      <p class="font-poppins text-justify p-3 text-slate-300">
+        
+I am an Information Systems student at Horizon University Indonesia, focusing on Front-end Web Development. I have an interest in interactive interface design, 3D modeling, and experience in managing digital projects. Currently, I am continuously learning and improving my skills to create better user experiences through web technology.</p>
+    </div>
+    </div>
+  </div>
+  </section>
+  </main>
+
+ 
+  </body>
+</html>
+
+<script src="main.js"></script>
