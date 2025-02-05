@@ -14,21 +14,23 @@
       src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"
     ></script>
   </head>
-  <body>
+  <body class="bg-gradient-to-r from-slate-950 to-slate-900">
     <div
       class="hidden sm:block fixed w-14 h-14 bg-gradient-to-r z-0 from-sky-500 to-purple-700 blur-xl rounded-full pointer-events-none opacity-50"
       id="cursordash"
     ></div>
     <div
-      class="w-full h-screen bg-gradient-to-r from-slate-800 to-sky-900 text-white"
+      class="w-full h-screen  text-white"
     >
       <div class="w-screen h-96 flex flex-col items-center relative top-28">
+        <p class="mb-5 font-bohemy text-2xl gradient-sky tracking-wider">Innovate with Every Line of Code</p>
         <model-viewer
           src="assest/sceneee.glb"
           autoplay
           shadow-intensity="1"
           class="w-56 h-56"
         ></model-viewer>
+        
         <a
           href="dashboard.html"
           class="w-52 h-14 border-2 border-white/50 mt-10 rounded-full flex items-center justify-center group hover:bg-slate-600/60 active:bg-slate-700 transition-all duration-500 active:ring-2 ring-slate-300"
